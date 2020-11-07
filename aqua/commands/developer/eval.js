@@ -25,7 +25,7 @@ module.exports = {
   
         return result.then(output => {
             if (typeof output !== "string") output = require("util").inspect(output, { depth });
-            if (output.includes(message.client.token)) output = output.replace(message.client.token, "NzI5ODIzNDQ4NzUwMDk2Mzk1.XwOjdA.MqJ0XNd507vbHwU0OKh3NcYYeI4");
+            if (output.includes(message.client.token)) output = output.replace(message.client.token);
             const embed = new MessageEmbed()
             .setTitle("Eval")
             .setColor("#00d9ff")
